@@ -5,3 +5,17 @@
 
 - RESTAPIのデメリットを改善したもの
   - `Underfetching` と `Overfetching` を解決
+
+- スキーマを定義する必要がある
+  - スキーマタイプ
+    - オブジェクトタイプ
+      - データの定義
+    - Queryタイプ
+      - Read Operation（問い合わせ）を行うクエリの定義
+    - Mutationタイプ
+      - Write Operation（作成・更新・削除）に利用
+    - Subscriptionタイプ
+      - リアルタイプの Read Operation に利用
+
+- リゾルバ
+  - スキーマの定義をもとにデータ処理をどのように行うのかを記述
