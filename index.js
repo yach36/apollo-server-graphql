@@ -2,13 +2,13 @@ import { ApolloServer, gql } from "apollo-server";
 
 const typeDefs = gql`
   type Query {
-    hello: String
+    hello(name: String!): String
   }
 `
 
 const resolvers = {
   Query: {
-    hello: () => 'Hello World',
+    hello: (parent, args) => `Hello ${args.name}`,
   }
 }
 
