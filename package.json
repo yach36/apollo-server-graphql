@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^3.12.0",
+    "axios": "^1.4.0",
     "graphql": "^16.6.0"
   },
   "devDependencies": {
